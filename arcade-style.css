@@ -1,0 +1,269 @@
+@font-face { font-family: PixelReg; src: url("fonts/Pixelout.ttf"); }
+@font-face { font-family: PixelLight; src: url("fonts/Pixellari.ttf"); }
+
+html{
+    cursor: url('imgs/cursor.png'), auto;
+}
+
+html:active{
+    cursor: url('imgs/click-cursor.png'), auto;
+}
+
+body {
+background-image: var(--gradient);
+cursor: pointer;
+
+
+}
+
+:root{
+    --gradient: linear-gradient(
+        45deg,
+       rgb(2, 44, 55),
+        rgb(21, 2, 39),
+        rgb(3, 22, 27),
+        rgb(1, 6, 7)
+    );
+
+    
+}
+
+#arc-select{
+    width: 100%;
+    height: 2000px;
+}
+
+#arc-box{
+    display: grid;
+   
+     gap: 10px;
+     
+     width: 950px;
+     height: 1200px;
+     position: absolute;
+     left: 20%;
+     top: 30%;
+     background-color:transparent;
+     
+}
+
+
+
+#arc-title{
+    font-family: PixelReg;
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    left: 38%;
+    top: 0%;
+
+    animation: arc-title-ani 3s ease-in-out;
+
+
+}
+
+@keyframes arc-title-ani {
+
+    0%{
+        opacity: 0%;
+        top: 10%;
+    }
+
+    100%{
+        opacity: 100%;
+        top: 0%;
+    }
+    
+}
+
+#arc-home{
+    background: transparent;
+    border: transparent;
+    font-family: PixelLight;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    transition-duration: .4s;
+}
+
+#arc-home:hover{
+    color: rgb(255, 255, 255);
+     text-shadow: 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969;  
+}
+
+#arc1{
+    background: transparent;
+    
+    width: 900px;
+    height: 300px;
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid white;
+ 
+
+}
+
+#arc1-title{
+    font-family: PixelLight;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    left: 2%;
+    top: 0%;
+    text-align: left;
+}
+
+
+#arc1-play{
+    font-family: PixelLight;
+    font-size: 30px;
+    color: var(--gradient);
+    text-align: center;
+    position: relative;
+   left: 73%;
+   top: 3%;
+    background-color: white;
+    border: 2px solid white;
+    width: 100px;
+    height: 280px;
+    transition-duration: .4s;
+    border-radius: 10px;
+}
+
+#arc1-play:hover{
+ box-shadow: 0 10px 25px 0 rgba(255, 255, 255, 0.2), 0 10px 25px 0 rgba(255, 255, 255, 0.19);
+ width: 150px;
+
+}
+
+#arc2{
+     background: transparent;
+   
+    width: 900px;
+    height: 300px;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 10px;
+  
+ 
+
+}
+
+#arc2-title{
+    font-family: PixelLight;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    left: 2%;
+    top: 0%;
+    text-align: left;
+}
+
+
+#arc2-play{
+    font-family: PixelLight;
+    font-size: 30px;
+    color: var(--gradient);
+    text-align: center;
+   position: relative;
+    left: 73%;
+   top: 3%;
+    background-color: white;
+    border: 2px solid white;
+    width: 100px;
+    height: 280px;
+    transition-duration: .4s;
+    border-radius: 10px;
+}
+#arc2-play:hover{
+ box-shadow: 0 10px 25px 0 rgba(255, 255, 255, 0.2), 0 10px 25px 0 rgba(255, 255, 255, 0.19);
+  width: 150px;
+}
+
+#arc3{
+     background: transparent;
+
+    width: 900px;
+    height: 300px;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+
+#arc3-title{
+    font-family: PixelLight;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    left: 2%;
+    top: 0%;
+    text-align: left;
+}
+
+
+#arc3-play{
+    font-family: PixelLight;
+    font-size: 30px;
+    color: var(--gradient);
+    text-align: center;
+    position: relative;
+ left: 73%;
+   top: 3%;
+    background-color: white;
+    border: 2px solid white;
+    width: 100px;
+   height: 280px;
+    transition-duration: .4s;
+    border-radius: 10px;
+}
+#arc3-play:hover{
+ box-shadow: 0 10px 25px 0 rgba(255, 255, 255, 0.2), 0 10px 25px 0 rgba(255, 255, 255, 0.19);
+  width: 150px;
+}
+
+#arc4{
+     background: transparent;
+   
+    width: 900px;
+    height: 300px;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+
+#arc4-title{
+    font-family: PixelLight;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    left: 2%;
+    top: 0%;
+    text-align: left;
+}
+
+
+#arc4-play{
+    font-family: PixelLight;
+    font-size: 30px;
+    color: var(--gradient);
+    text-align: center;
+    position: relative;
+    left: 73%;
+   top: 3%;
+    background-color: white;
+    border: 2px solid white;
+    width: 100px;
+  height: 280px;
+    transition-duration: .4s;
+    border-radius: 10px;
+}
+#arc4-play:hover{
+ box-shadow: 0 10px 25px 0 rgba(255, 255, 255, 0.2), 0 10px 25px 0 rgba(255, 255, 255, 0.19);
+  width: 150px;
+}
+
+

@@ -1,0 +1,540 @@
+@font-face { font-family: PixelReg; src: url("fonts/Pixelout.ttf"); }
+@font-face { font-family: PixelLight; src: url("fonts/Pixellari.ttf"); }
+
+html{
+    cursor: url('imgs/cursor.png'), auto;
+}
+
+html:active{
+    cursor: url('imgs/click-cursor.png'), auto;
+}
+
+body {
+background-image: var(--gradient);
+cursor: pointer;
+animation: background 6s ease-in-out infinite;
+
+}
+
+:root{
+    --gradient: linear-gradient(
+        45deg,
+       rgb(2, 44, 55),
+        rgb(21, 2, 39),
+        rgb(3, 22, 27),
+        rgb(1, 6, 7)
+        
+        
+        
+
+
+    );
+
+    
+}
+
+@keyframes background {
+
+    0%{
+        background-position: left;
+
+    }
+    100%{
+        background-position: right;
+        
+    }
+    
+}
+
+#id1-title1{
+     display: flex;
+    font-family: PixelReg;
+    font-size: 120px;
+    color: white;
+    position: absolute;
+    left: 35%;
+    top: 0%;
+    animation: intro-title 4s ease-in-out;
+    
+}
+
+#id1-title2{
+     display: flex;
+    font-family: PixelReg;
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    left: 35%;
+    top: 18%;
+
+    animation: intro-title 5s ease-in-out;
+    
+  
+}
+
+@keyframes intro-title {
+
+        0%{
+        opacity: 0%;
+        left: 15%;
+    }
+
+    75%{
+        opacity: 0%;
+    }
+
+
+    100%{
+        opacity: 100%;
+        left: 35%;
+    }
+    
+}
+
+#id1-img{
+     display: flex;
+    rotate: 180deg;
+    height: 400px;
+    width: 200px;
+    position: absolute;
+    top: 0%;
+    left: 23%;
+    animation: intro-portal 3s ease-in-out;
+  
+}
+
+@keyframes intro-portal {
+
+    0%{
+        opacity: 0%;
+        left: 15%;
+    }
+
+
+    100%{
+        opacity: 100%;
+        left: 23%;
+    }
+    
+}
+
+#arcade{
+    display: flex;
+    font-family: PixelLight;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+     transition-duration: .4s;
+
+     animation: arcade-inani 6s ease-in-out;
+
+}
+
+#arcade:hover{
+    color: rgb(255, 255, 255);
+     text-shadow: 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969;  
+}
+
+@keyframes arcade-inani {
+
+    0%{
+        opacity: 0%;
+        top: 40%;
+
+
+
+    }
+
+    75%{
+        opacity: 0%;
+        top: 40%;
+    }
+
+    100%{
+        opacity: 100%;
+        top: 50%;
+    }
+    
+}
+
+#docs{
+    display: flex;
+    font-family: PixelLight;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+     transition-duration: .4s;
+      animation: docs-inani 7s ease-in-out;
+
+}
+
+#docs:hover{
+   color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969;  
+}
+
+@keyframes docs-inani {
+
+    0%{
+        opacity: 0%;
+        top: 55%;
+
+
+
+    }
+
+    75%{
+        opacity: 0%;
+        top: 55%;
+    }
+
+    100%{
+        opacity: 100%;
+        top: 65%;
+    }
+    
+}
+
+#credits{
+    display: flex;
+    font-family: PixelLight;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    top: 80%;
+    left: 42.5%;
+    transition-duration: .4s;
+    animation: credits-inani 8s ease-in-out;
+    content: "> ";
+}
+
+#credits:hover{
+      color: rgb(255, 255, 255);
+   text-shadow: 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969;  
+
+}
+
+#credit:hover::after{
+    content: '> ';
+}
+
+@keyframes credits-inani {
+
+    0%{
+        opacity: 0%;
+        top: 70%;
+
+
+
+    }
+
+    75%{
+        opacity: 0%;
+        top: 70%;
+    }
+
+    100%{
+        opacity: 100%;
+        top: 80%;
+    }
+    
+}
+
+
+#versioncode{
+    
+     display: flex;
+    font-family: PixelLight;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+  left: 95%;
+  top: 93%;
+}
+
+#help{
+    font-family: PixelLight;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 92%;
+    top: 95.75%;
+    background: transparent;
+    border: transparent;
+    transition-duration: .4s;
+}
+
+#help:hover{
+    
+     color: rgb(0, 145, 177);
+    text-shadow: 0 0 10px #006971, 0 0 10px #006971, 0 0 10px #006971, 0 0 10px #006971, 0 0 10px #006971, 0 0 10px #006971, 0 0 10px #006971;  
+}
+
+#helpdesc{
+    font-family: PixelLight;
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    width: 300px;
+    top: 95%;
+    left: 73%;
+    opacity: 0%;
+
+}
+
+.show{
+opacity: 100%;
+}
+
+
+
+/*INFINITE DIMENSIONS DOCUMENTS ---------------------------------------------------------------------- */
+
+#id2-img{
+     display: flex;
+    rotate: 180deg;
+    height: 400px;
+    width: 200px;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    animation: intro-portal2 3s ease-in-out;
+  
+}
+
+@keyframes intro-portal2 {
+
+    0%{
+        opacity: 0%;
+        left: 15%;
+    }
+
+
+    100%{
+        opacity: 100%;
+        left: 20%;
+    }
+    
+}
+
+
+#docs-title{
+    display: flex;
+    font-family: PixelReg;
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    left: 30%;
+    top: 8%;
+
+    animation: docsintro-title 4s ease-in-out;
+}
+
+@keyframes docsintro-title {
+
+        0%{
+        opacity: 0%;
+        left: 15%;
+    }
+
+    75%{
+        opacity: 0%;
+    }
+
+
+    100%{
+        opacity: 100%;
+        left: 30%;
+    }
+    
+}
+
+#dmc{
+    display: flex;
+    font-family: PixelLight;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+     transition-duration: .4s;
+
+    
+
+}
+
+#dmc:hover{
+    color: rgb(255, 255, 255);
+     text-shadow: 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969;  
+}
+
+#id2{
+    display: flex;
+    font-family: PixelLight;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    top: 65%;
+    left: 44%;
+     transition-duration: .4s;
+
+    
+
+}
+
+#id2:hover{
+    color: rgb(255, 255, 255);
+     text-shadow: 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969;  
+}
+
+#docs-home{
+    display: flex;
+    font-family: PixelLight;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    top: 80%;
+    left: 42.5%;
+     transition-duration: .4s;
+
+    
+
+}
+
+#docs-home:hover{
+    color: rgb(255, 255, 255);
+     text-shadow: 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969;  
+}
+
+/*CREDITS -------------------------------------------------------------------------------------- */
+
+#credsec{
+    width: 100%;
+    height: 100%;
+}
+
+#credtitle{
+    font-family: PixelReg;
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    left: 38%;
+    top: 5%;
+
+}
+
+#webcred{
+    font-family: PixelLight;
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    left: 33%;
+    top: 25%;
+}
+
+#gamecred{
+    font-family: PixelLight;
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    left: 30%;
+    top: 45%;
+}
+
+#credhome{
+    background: transparent;
+    border: transparent;
+    font-family: PixelLight;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    left: 10%;
+    top: 14%;
+    transition-duration: .4s;
+}
+#credhome:hover{
+    color: rgb(255, 255, 255);
+     text-shadow: 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969;  
+}
+
+/* DMC DOCUMENTS ------------------------------------------------------------------------------------ */
+
+#dmc-title{
+    font-family: PixelReg;
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 43%;
+}
+
+#dmc-tapes{
+     font-family: PixelLight;
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    background-color: transparent;
+    border: transparent;
+    transition-duration: .4s;
+}
+
+#dmc-tapes:hover{
+    color: rgb(255, 255, 255);
+     text-shadow: 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969;  
+}
+#dmc-docs{
+     font-family: PixelLight;
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 39%;
+    background-color: transparent;
+    border: transparent;
+    transition-duration: .4s;
+}
+
+#dmc-docs:hover{
+    color: rgb(255, 255, 255);
+     text-shadow: 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969;  
+}
+#dmc-home{
+     font-family: PixelLight;
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 37%;
+    background-color: transparent;
+    border: transparent;
+    transition-duration: .4s;
+}
+
+#dmc-home:hover{
+    color: rgb(255, 255, 255);
+     text-shadow: 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969, 0 0 10px #686969;  
+}
